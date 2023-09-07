@@ -1,0 +1,99 @@
+*
+{
+    margin: 0;
+    padding: 0;  
+}
+.hd{
+    background-image: url(book.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+.text h1{
+    font-size: 80px;
+    color: rgb(145, 27, 27);
+    left: 30%;
+    top: 50%;
+    position: absolute;
+    animation: animate 2s linear infinite;
+}
+@keyframes animate{
+    0%{
+      opacity: 0;
+    }
+    50%{
+      opacity: 0.9;
+    }
+    100%{
+      opacity: 0;
+    }
+}
+.flower{
+  top: 0;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-around;
+  position: absolute;
+}
+.flower img{
+  width: 80px;
+  animation: sample 8s linear infinite;
+}
+@keyframes sample 
+{
+  0%
+  {
+    transform: translateY(0);
+    opacity: 0;
+    transform: rotate(180deg);
+  }
+  15%
+  {
+    opacity: 0.5;
+    
+  }
+  50%{
+    opacity: 1;
+  }
+  70%
+  {
+    opacity: 1;
+  }
+  100%
+  {
+    opacity: 0;
+    transform: translateY(95vh);
+  }
+
+}
+.flower img:nth-child(1){
+  width: 120px;
+  animation-delay: 2s;
+}
+
+.flower img:nth-child(2){
+  width: 80px;
+  motion: rotation 180px;
+}
+.flower img:nth-child(3){
+  width: 130px;
+  animation-delay: 4s;
+}
+.flower img:nth-child(4){
+  width: 220px;
+  animation-delay: 5.5s;
+}
+.flower img:nth-child(5){
+  width: 120px;
+  animation-delay: 2s;
+}
+.flower img:nth-child(6){
+  width: 300px;
+  animation-delay: 4.5s;
+}
+
+  
